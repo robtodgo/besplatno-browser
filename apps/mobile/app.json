@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Besplatno Browser",
+    "slug": "besplatno-browser",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FF8C00"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.besplatno.browser"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#FF8C00"
+      },
+      "package": "com.besplatno.browser"
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    }
+  }
+}

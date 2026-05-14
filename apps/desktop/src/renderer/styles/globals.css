@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Базовые стили для браузера */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Запрет выделения текста в UI-элементах */
+.no-select {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Область перетаскивания окна */
+.drag-region {
+  -webkit-app-region: drag;
+}
+
+/* Кнопки внутри drag-region не должны перетаскивать */
+.no-drag {
+  -webkit-app-region: no-drag;
+}
+
+/* Скроллбар */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 140, 0, 0.5);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 140, 0, 0.8);
+}

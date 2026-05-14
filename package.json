@@ -1,0 +1,21 @@
+{
+  "name": "besplatno-browser-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:desktop": "turbo run dev --filter=desktop",
+    "dev:mobile": "turbo run dev --filter=mobile",
+    "build:desktop": "turbo run build --filter=desktop",
+    "build:mobile": "turbo run build --filter=mobile",
+    "postinstall": "ts-node scripts/postinstall.ts"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.5.0",
+    "ts-node": "^10.9.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}

@@ -1,0 +1,40 @@
+appId: com.besplatno.browser
+productName: Besplatno Browser
+copyright: "Copyright © 2025 Besplatno"
+
+directories:
+  output: release
+  buildResources: assets
+
+files:
+  - dist/**
+  - node_modules/**
+  - package.json
+
+win:
+  icon: assets/icon.png
+  target:
+    - target: nsis
+      arch:
+        - x64
+  artifactName: "${productName}-Setup-${version}.${ext}"
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Besplatno Browser
+  installerIcon: assets/icon.png
+  uninstallerIcon: assets/icon.png
+
+linux:
+  icon: assets/icon.png
+  target:
+    - AppImage
+    - deb
+
+mac:
+  icon: assets/icon.png
+  target:
+    - dmg
